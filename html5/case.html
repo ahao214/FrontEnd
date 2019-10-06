@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<form action="">
+			<fieldset>
+				<legend>
+					学生档案
+				</legend>
+				<label>姓名：<input type="text" name="username" id="username" placeholder="请输入学生名字" /></label><br /><br />
+				手机：<input type="tel" name="tel" id="tel" placeholder="手机号" /><br /><br />
+				邮箱：<input type="email" name="email" id="email" placeholder="邮箱地址" /><br /><br />
+				所属学院：<input type="text" list="xueyuan" placeholder="请选则学院" />
+				<datalist id="xueyuan">
+					<option>Java学院</option>
+					<option>php学院</option>
+					<option>C#学院</option>
+					<option>前端学院</option>
+					<option>后端学院</option>
+				</datalist><br /><br />
+				出生日期：<input type="date" placeholder="请输入年龄" /><br /> <br />
+				成绩：<input type="number" placeholder="请输入成绩" />
+				<br /><br />
+				毕业时间：<input type="date" /><br /><br />
+
+				<input type="submit" />
+				<input type="reset" />
+			</fieldset>
+		</form>
+	</body>
+</html>
