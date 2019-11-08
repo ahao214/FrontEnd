@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			/* 边偏移 top bottom left right */
+			.one {
+				width: 100px;
+				height: 100px;
+				background-color: pink;
+				top: 100px;
+				left: 100px;
+				position: absolute;
+				/*绝对定位*/
+			}
+
+			/*定位模式position:static relative absolute fixed*/
+
+			.two {
+				width: 100px;
+				height: 100px;
+				background-color: black;
+				top: 10px;
+				left: 10px;
+				position: static;
+				/* 定位模式——静态定位:对于边偏移无效果，一般用来清除定位 */
+			}
+
+			
+		</style>
+	</head>
+	<body>
+		<div class="one"></div>
+		<div class="two"></div>
+	</body>
+</html>
