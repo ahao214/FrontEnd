@@ -3,224 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<title></title>
-		<style type="text/css">
-			* {
-				margin: 0;
-				padding: 0;
-			}
-
-			ul {
-				list-style: none;
-				/* 去掉列表样式小点 */
-			}
-
-			.clearfix:before,
-			.clearfix:after {
-				content: "";
-				display: table;
-			}
-
-			.clearfix:after {
-				clear: both;
-			}
-
-			a {
-				color: #050505;
-				text-decoration: none;
-			}
-
-			.container {
-				width: 1200px;
-				margin: 0 auto;
-			}
-
-			/* 页面部分 */
-			body {
-				background-color: #f3f5f7;
-			}
-
-			header {
-				height: 100px;
-				/* background-color: pink; */
-				overflow: hidden;
-			}
-
-			nav {
-				width: 1366px;
-				height: 42px;
-				margin: 26px auto;
-			}
-
-			.logo {
-				float: left;
-			}
-
-			.navbar {
-				float: left;
-				height: 42px;
-				line-height: 42px;
-				/* 这个行高给父亲,行高会继承 */
-				margin-left: 50px;
-			}
-
-			.navbar li {
-				float: left;
-				/* 让首页 课程 一行显示 */
-
-			}
-
-			.navbar li a {
-				padding: 0 8px;
-				/* 上下是0 左右是8像素 */
-				display: block;
-				height: 42px;
-
-			}
-
-			.navbar li a:hover {
-				border-bottom: 2px solid #00a4ff;
-				/* 	鼠标放上去有底边框 */
-			}
-
-			.search {
-				width: 434px;
-				height: 38px;
-				/* border: 1px solid #00a4ff; */
-				float: left;
-			}
-
-			.search input[type=text] {
-				/* 属性选择器 type为text的文本框*/
-				width: 360px;
-				height: 38px;
-				padding-left: 20px;
-				float: left;
-			}
-
-			.search input[type=submit] {
-				/* 属性选择器 type为submit的文本框*/
-				width: 50px;
-				height: 38px;
-				background: #00a4ff url(images/search_06.png) center center no-repeat;
-				float: left;
-
-			}
-
-			/* 个人中心 */
-			/* banner start */
-			.banner {
-				height: 420px;
-				background-color: #1c036c;
-			}
-			.banner-in{
-				height: 420px;
-				background:  url(images/banner_03.png) 0 0 no-repeat;
-			}
-			.slidebar{
-				height: 420px;
-				width: 190px;
-				background: rgba(0,0,0,0.3); 	/* 盒子背景半透明 */
-				float: left;
-			}
-			.slidebar li a {
-				color: #fff;
-				font-size: 14px;
-				padding: 0 20px;
-				/* a是行内元素,没有大小,需要转换 */
-				display: block;
-				height: 45px;
-				line-height: 45px;				
-			}
-			.slidebar  li a:hover{
-				color: #00a4ff;
-			}
-			.slidebar  a span{
-				float: right;
-				font-family: arial;
-			}
-			.timetable{
-				float: right;
-				width: 230px;
-				height: 300px;
-				background-color: #fff;
-				margin-top: 50px;
-			}
-			.timetable dt{
-				height: 50px;
-				background-color: #9bceee;
-				text-align: center;
-				line-height: 50px;	/*设置垂直居中*/		
-				color: #fff;
-				font-weight: 700;	/* 文字加粗 */
-				letter-spacing: 2px;	/* 设置字体间距 */
-				margin-bottom: 5px;
-			}
-			.timetable dd{
-				width: 193px;
-				height: 60px;
-				margin:  auto;
-				border-bottom: 1px solid #ccc;
-				padding-top: 12px;
-				box-sizing: border-box;
-			}
-			.timetable dd:last-child{	/*结构伪类选择器*/
-				border: 0;
-			}
-			.timetable dd h4{
-				font-size: 16px;
-				font-weight: normal;
-				color: #4e4e4e;
-				
-			}
-			.timetable dd p{
-				color: #a5a5a5;
-				font-size: 14px;				
-			}
-			.timetable dd a{
-				height: 38px;
-				border: 1px solid #00A4FF;
-				display: block;
-				text-align: center;
-				line-height: 38px;
-				color: #00A4FF;
-				font-weight: 700;	/* 文字加粗 */
-			}
-			.timetable dd a:hover{
-				background-color: #00A4FF;
-				color: #fff;
-			}
-			
-			.recommend{
-				height: 60px;
-				line-height: 60px;
-				background-color: #fff;
-				margin-top: 8px;
-				box-shadow: 0 2px 2px rgba(0,0,0,0.2);
-				/* 盒子阴影 水平位置 垂直位置 模糊距离 影子颜色 */
-			}
-			.recommend a{
-				padding: 0 30px;
-				border-right:  1px solid #ccc;
-							
-			}
-			.recommend a:first-child{
-				color: #00A4FF;
-			}
-			.recommend a:hover{
-				color: #00A4FF;
-			}
-			.recommend a:last-child{
-				border: 0;
-				color: #00A4FF;
-				float: right;
-				font-size: 14px;			
-			}
-			/* banner end */
-		</style>
-		<script type="text/javascript">
-
-
-		</script>
+		<link rel="stylesheet" href="style.css" />
 	</head>
 	<body>
 		<header>
@@ -248,7 +31,7 @@
 
 			</nav>
 		</header>
-		
+
 		<div class="banner">
 			<div class="banner-in container">
 				<!-- 左侧导航栏 侧边栏-->
@@ -265,7 +48,7 @@
 						<li><a href="#">前端开发<span>></span></a></li>
 					</ul>
 				</div>
-			
+
 				<!-- 右侧小盒子 我的课程表 -->
 				<dl class="timetable">
 					<dt>我的课程表</dt>
@@ -285,12 +68,21 @@
 						<a href="#">全部课程</a>
 					</dd>
 				</dl>
-				
-				
+
+				<ul class="circle">
+					<li class="current"></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+
 			</div>
 		</div>
 
-		<div class="recommend container">	<!-- 精品推荐 -->
+		<div class="recommend container">
+			<!-- 精品推荐 -->
 			<a href="#">精品推荐</a>
 			<a href="#">Jquery</a>
 			<a href="#">Spart</a>
@@ -300,6 +92,112 @@
 			<a href="#">ASP.NET</a>
 			<a href="#">修改兴趣</a>
 		</div>
+
+		<!-- 精品推荐大模块 -->
+		<div class="recom-products container">
+			<div class="recom-hd">
+				<h4>精品推荐</h4>
+				<a href="#">查看全部</a>
+			</div>
+			<div class="recom-bd clearfix">
+				<ul>
+					<li>
+						<img src="images/icon1.png" alt="" />
+						<h5>Think PHP 5.0 博客系统实战项目演练</h5>
+						<p><span>高级</span>1225人学习</p>
+					</li>
+					<li>
+						<img src="images/icon1.png" alt="" />
+						<h5>Think PHP 5.0 博客系统实战项目演练</h5>
+						<p><span>高级</span>1225人学习</p>
+					</li>
+					<li>
+						<img src="images/icon1.png" alt="" />
+						<h5>Think PHP 5.0 博客系统实战项目演练</h5>
+						<p><span>高级</span>1225人学习</p>
+					</li>
+					<li>
+						<img src="images/icon1.png" alt="" />
+						<h5>Think PHP 5.0 博客系统实战项目演练</h5>
+						<p><span>高级</span>1225人学习</p>
+					</li>
+					<li>
+						<img src="images/icon1.png" alt="" />
+						<h5>Think PHP 5.0 博客系统实战项目演练</h5>
+						<p><span>高级</span>1225人学习</p>
+					</li>
+					<li>
+						<img src="images/icon1.png" alt="" />
+						<h5>Think PHP 5.0 博客系统实战项目演练</h5>
+						<p><span>高级</span>1225人学习</p>
+					</li>
+					<li>
+						<img src="images/icon1.png" alt="" />
+						<h5>Think PHP 5.0 博客系统实战项目演练</h5>
+						<p><span>高级</span>1225人学习</p>
+					</li>
+					<li>
+						<img src="images/icon1.png" alt="" />
+						<h5>Think PHP 5.0 博客系统实战项目演练</h5>
+						<p><span>高级</span>1225人学习</p>
+					</li>
+					<li>
+						<img src="images/icon1.png" alt="" />
+						<h5>Think PHP 5.0 博客系统实战项目演练</h5>
+						<p><span>高级</span>1225人学习</p>
+					</li>
+					<li>
+						<img src="images/icon1.png" alt="" />
+						<h5>Think PHP 5.0 博客系统实战项目演练</h5>
+						<p><span>高级</span>1225人学习</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+
+		<!-- 页面底部 -->
+		<footer>
+			<div class="container footer-in">
+				<div class="footer-l">
+					<img src="images/logo_03.png" alt="" />
+					<p>XXX教育在线普及中国最好的教育水平和一流的大学进行合作提供在线课程<br />@2019年保留权限</p>
+					<a href="#">下载APP</a>
+				</div>
+				<div class="footer-r">
+					<dl>
+						<dt>
+							关于XXX
+						</dt>
+						<dd><a href="#">关于</a></dd>
+						<dd><a href="#">管理团队</a></dd>
+						<dd><a href="#">工作机会</a></dd>
+						<dd><a href="#">客户服务</a></dd>
+						<dd><a href="#">帮助</a></dd>
+					</dl>
+					<dl>
+						<dt>
+							关于XXX
+						</dt>
+						<dd><a href="#">关于</a></dd>
+						<dd><a href="#">管理团队</a></dd>
+						<dd><a href="#">工作机会</a></dd>
+						<dd><a href="#">客户服务</a></dd>
+						<dd><a href="#">帮助</a></dd>
+					</dl>
+					<dl>
+						<dt>
+							关于XXX
+						</dt>
+						<dd><a href="#">关于</a></dd>
+						<dd><a href="#">管理团队</a></dd>
+						<dd><a href="#">工作机会</a></dd>
+						<dd><a href="#">客户服务</a></dd>
+						<dd><a href="#">帮助</a></dd>
+					</dl>
+				</div>
+			</div>
+		</footer>
 
 	</body>
 </html>
