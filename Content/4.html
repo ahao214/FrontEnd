@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>超出的部分显示省略号</title>
+		<style type="text/css">
+			.chinese{
+				width: 120px;
+				height: 20px;
+				border: 1px solid red;
+				white-space: nowrap;	/* 强制同一行内显示文本 */
+				overflow: hidden;	/* 必须有这句话 */
+				/*text-overflow: clip;	 直接裁剪 */
+				text-overflow: ellipsis;	/* 超出的部分用省略号代替 */
+				
+			}
+		</style>
+	</head>
+	<body>
+		<div class="chinese">我的名字是安迪，楚乔的男朋友</div>
+		
+	</body>
+</html>

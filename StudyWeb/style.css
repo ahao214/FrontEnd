@@ -4,8 +4,9 @@
 }
 
 ul {
-	list-style: none;
 	/* 去掉列表样式小点 */
+	list-style: none;
+
 }
 
 .clearfix:before,
@@ -364,10 +365,12 @@ footer {
 	float: right;
 	color: #333;
 }
-.footer-r dl{
+
+.footer-r dl {
 	float: left;
 	width: 225px;
 }
+
 .footer-r dt {
 	font-size: 16px;
 	height: 30px;
@@ -383,5 +386,5 @@ footer {
 	color: #00A4FF;
 	/* 添加下划线 */
 	text-decoration: underline;
-	
+
 }
