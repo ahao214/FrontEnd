@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>体会动画</title>
+		<style type="text/css">
+			div{
+				width: 100px;
+				height: 100px;
+				background-color: pink;
+				animation: go 2s ease 0s reverse;
+			}
+			
+			/* @keyframes 动画名称 定义动画 */
+			
+			@keyframes go{
+				from{
+					transform: translateX(0);
+				}
+				to{
+					transform: translateX(600px);
+				}
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div></div>
+	</body>
+</html>

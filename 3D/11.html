@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			img{
+				/* 引用动画 */
+				animation: car 5s infinite; /* infinite表示无限循环 */
+			}
+			
+			/*定义动画*/
+			@keyframes car{
+				0%{
+					transform: translate3d(0,0,0);
+				}
+				50%{
+					transform: translate3d(1000px,0,0);
+				}
+				51%{
+					/*如果有多组变形 都属于transform 使用空格隔开*/
+					transform: translate3d(1000px,0,0) rotateY(180deg);
+				}
+				100%{
+					/*如果有多组变形 都属于transform 使用空格隔开*/
+					transform: translate3d(0,0,0) rotateY(180deg);
+				}
+			}
+			
+		</style>
+	</head>
+	<body>
+	<img src="images/car.jpg" width="100px" />
+	</body>
+</html>

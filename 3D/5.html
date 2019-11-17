@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>体会透视</title>
+		<style type="text/css">
+			body {
+				perspective: 500px;
+				/* 视距 眼睛到屏幕的距离 视距越大，效果越不明显*/
+			}
+
+			img {
+				margin: 100px;
+				transition: all 5s;
+				transform-origin: left;
+			}
+
+			img:hover {
+				transform: rotateY(80deg);
+			}
+		</style>
+	</head>
+	<body>
+		<img src="images/1498446043198.png" width="200px" height="200px" />
+	</body>
+</html>
